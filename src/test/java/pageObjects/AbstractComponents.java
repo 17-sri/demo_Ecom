@@ -26,16 +26,19 @@ public class AbstractComponents {
 		wait.until(ExpectedConditions.visibilityOfElementLocated(findBy));
 	}
 	
+	public void waitForWebElementToAppear(WebElement findEle) {
+		wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+		wait.until(ExpectedConditions.visibilityOf(findEle));
+	}
+	
 	public CartPage goToCartPage() {
 		cartHeader.click();
 		CartPage cartPage = new CartPage(driver);
 		return cartPage;
-		
 	}
+	
 	public void waitForElementToDisappear(WebElement ele) {
 		//Thread.sleep(1000);  Or
-		wait.until(ExpectedConditions.invisibilityOf(ele));
-		
+		wait.until(ExpectedConditions.invisibilityOf(ele));	
 	}
-
 }
