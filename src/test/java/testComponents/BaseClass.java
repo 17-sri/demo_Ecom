@@ -33,18 +33,17 @@ public class BaseClass {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		return driver;
 	}
-	@BeforeMethod
+	@BeforeMethod(alwaysRun = true)// if we want to run in groups, we should mention (alwaysRun = true) for prerequisites
 	public LandingPage launchApplication() throws IOException {
 		driver = initializeDriver();
 		landingPage = new LandingPage(driver);
 		landingPage.goTo();
 		return landingPage;
 	}
-	@AfterMethod
+	@AfterMethod(alwaysRun = true)// if we want to run in groups, we should mention (alwaysRun = true) for postrequisites
 	public void tearDown() {
 		driver.quit();
 	}
-	
 }
 
 

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Groups_Example_Suite">
+	<groups>
+		<run>
+			<include name="ErrorHandling" /><!-- here only ErrorHandling mentioned groups will run -->
+		</run>
+	</groups>
+	<test thread-count="5" name="Submit Order Test">
+		<classes>
+			<class name="testCases.SubmitOrderTest" />
+			<class name="testCases.ErrorValidationTest" />
+		</classes>
+	</test> 
+</suite> 
