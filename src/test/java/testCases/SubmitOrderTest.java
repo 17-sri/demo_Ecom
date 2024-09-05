@@ -19,7 +19,7 @@ public class SubmitOrderTest extends BaseClass {
 	@Test
 	public void submitOrder() throws IOException {
 		
-		ProductCatalogue productCatalogue = landingPage.loginApllication("srikanthv1709@gmail.com", "Selenium@123");
+		ProductCatalogue productCatalogue = landingPage.loginAplication("srikanthv1709@gmail.com", "Selenium@123");
 		@SuppressWarnings("unused")// this is just a warning
 		List<WebElement> products = productCatalogue.getProductList();
 		productCatalogue.addProductToCart(productName);
@@ -34,7 +34,7 @@ public class SubmitOrderTest extends BaseClass {
 	}
 	@Test(dependsOnMethods = {"submitOrder"})
 	public void OrderHistory() {
-		ProductCatalogue productCatalogue = landingPage.loginApllication("srikanthv1709@gmail.com", "Selenium@123");
+		ProductCatalogue productCatalogue = landingPage.loginAplication("srikanthv1709@gmail.com", "Selenium@123");
 		OrdersPage ordersPage = productCatalogue.goToOrdersPage();
 		Assert.assertTrue(ordersPage.VerifyOrderDisplay(productName));
 	}

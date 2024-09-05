@@ -15,12 +15,12 @@ public class ErrorValidationTest extends BaseClass {
 String productName = "ZARA COAT 3";//lecture 167
 	@Test(groups ={"ErrorHandling"})   //error validation with invalid password     
 	public void LoginErrorValidation() throws IOException {
-		landingPage.loginApllication("srikanthv1709@gmail.com", "S..elenium@123");
+		landingPage.loginAplication("srikanthv1709@gmail.com", "S..elenium@123");
 		Assert.assertEquals("Incorrect email or password.", landingPage.getErrorMessage());
 	}
 	@Test(groups ={"ErrorHandling"})
 	public void ProductErrorValidation() {
-		ProductCatalogue productCatalogue = landingPage.loginApllication("srikanthv1709@gmail.com", "Selenium@123");
+		ProductCatalogue productCatalogue = landingPage.loginAplication("srikanthv1709@gmail.com", "Selenium@123");
 		@SuppressWarnings("unused")// this is just a warning
 		List<WebElement> products = productCatalogue.getProductList();
 		productCatalogue.addProductToCart(productName);
