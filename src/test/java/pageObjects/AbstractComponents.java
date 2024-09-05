@@ -20,6 +20,8 @@ public class AbstractComponents {
 	
 	@FindBy(css = "[routerlink='/dashboard/cart']")
 	WebElement cartHeader;
+	@FindBy(css = "[routerlink='/dashboard/myorders']")
+	WebElement orderHeader;
 	
 	public void waitForElementToAppear(By findBy) {
 		wait = new WebDriverWait(driver, Duration.ofSeconds(5));
@@ -35,6 +37,11 @@ public class AbstractComponents {
 		cartHeader.click();
 		CartPage cartPage = new CartPage(driver);
 		return cartPage;
+	}
+	public OrdersPage goToOrdersPage() {
+		orderHeader.click();
+		OrdersPage ordersPage = new OrdersPage(driver);
+		return ordersPage;
 	}
 	
 	public void waitForElementToDisappear(WebElement ele) {
