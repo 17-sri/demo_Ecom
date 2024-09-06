@@ -8,7 +8,7 @@
     <classes>
       <class name="testCases.ErrorValidationTest">
         <methods>
-          <include name="ProductErrorValidation"/>
+          <include name="LoginErrorValidation"/>
           <include name="tearDown"/>
           <include name="launchApplication"/>
         </methods>

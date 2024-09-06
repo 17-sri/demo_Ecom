@@ -10,10 +10,11 @@ import org.testng.annotations.Test;
 import pageObjects.CartPage;
 import pageObjects.ProductCatalogue;
 import testComponents.BaseClass;
+import testComponents.Retry;;
 
 public class ErrorValidationTest extends BaseClass {
 String productName = "ZARA COAT 3";//lecture 167
-	@Test(groups ={"ErrorHandling"})   //error validation with invalid password     
+	@Test(groups ={"ErrorHandling"},retryAnalyzer=Retry.class)   //error validation with invalid password     
 	public void LoginErrorValidation() throws IOException {
 		landingPage.loginAplication("srikanthv1709@gmail.com", "S..elenium@123");
 		Assert.assertEquals("Incorrect email or password.", landingPage.getErrorMessage());
