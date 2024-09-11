@@ -45,9 +45,10 @@ public class BaseClass {
 		String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());
 		TakesScreenshot ts = (TakesScreenshot) driver;
 		File source = ts.getScreenshotAs(OutputType.FILE);
-		File file = new File(System.getProperty("user.dir") + "//screenshots//" + testCaseName + "_" +timeStamp+ ".png");
+		String filePath = System.getProperty("user.dir") + "//screenshots//" + testCaseName + timeStamp+ ".png";
+		File file = new File(filePath);
 		FileUtils.copyFile(source, file);
-		return System.getProperty("user.dir") + "//screenshots//" + testCaseName+".png";
+		return filePath;
 	}
 
 	@BeforeMethod(alwaysRun = true) // if we want to run in groups, we should mention (alwaysRun = true) for

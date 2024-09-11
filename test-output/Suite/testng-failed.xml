@@ -13,6 +13,14 @@
           <include name="launchApplication"/>
         </methods>
       </class> <!-- testCases.ErrorValidationTest -->
+      <class name="testCases.SubmitOrderTest">
+        <methods>
+          <include name="submitOrder"/>
+          <include name="OrderHistory"/>
+          <include name="tearDown"/>
+          <include name="launchApplication"/>
+        </methods>
+      </class> <!-- testCases.SubmitOrderTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
