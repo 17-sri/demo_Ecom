@@ -1,181 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results retried="1" ignored="1" total="6" passed="1" failed="2" skipped="1">
+<testng-results ignored="0" total="2" passed="0" failed="1" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-09-11T11:08:44 IST" name="Suite" finished-at="2024-09-11T11:09:51 IST" duration-ms="66404">
+  <suite started-at="2024-09-15T15:32:58 IST" name="Suite" finished-at="2024-09-15T15:33:22 IST" duration-ms="24105">
     <groups>
-      <group name="ErrorHandling">
-        <method signature="ErrorValidationTest.LoginErrorValidation()[pri:0, instance:testCases.ErrorValidationTest@5adb0db3]" name="LoginErrorValidation" class="testCases.ErrorValidationTest"/>
-        <method signature="ErrorValidationTest.ProductErrorValidation()[pri:0, instance:testCases.ErrorValidationTest@5adb0db3]" name="ProductErrorValidation" class="testCases.ErrorValidationTest"/>
-      </group> <!-- ErrorHandling -->
     </groups>
-    <test started-at="2024-09-11T11:08:44 IST" name="Test" finished-at="2024-09-11T11:09:51 IST" duration-ms="66404">
-      <class name="testCases.ErrorValidationTest">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:testCases.ErrorValidationTest@5adb0db3]" started-at="2024-09-11T11:08:45 IST" name="launchApplication" finished-at="2024-09-11T11:08:50 IST" duration-ms="5641" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method retried="true" signature="LoginErrorValidation()[pri:0, instance:testCases.ErrorValidationTest@5adb0db3]" started-at="2024-09-11T11:08:50 IST" name="LoginErrorValidation" finished-at="2024-09-11T11:08:53 IST" duration-ms="2914" status="SKIP">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[did not expect [Incorrect email or password.] but found [Incorrect email or password.]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: did not expect [Incorrect email or password.] but found [Incorrect email or password.]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failEquals(Assert.java:1582)
-at org.testng.Assert.assertNotEqualsImpl(Assert.java:157)
-at org.testng.Assert.assertNotEquals(Assert.java:2201)
-at org.testng.Assert.assertNotEquals(Assert.java:2223)
-at testCases.ErrorValidationTest.LoginErrorValidation(ErrorValidationTest.java:20)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LoginErrorValidation -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.ErrorValidationTest@5adb0db3]" started-at="2024-09-11T11:08:53 IST" name="tearDown" finished-at="2024-09-11T11:08:53 IST" duration-ms="328" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:testCases.ErrorValidationTest@5adb0db3]" started-at="2024-09-11T11:08:53 IST" name="launchApplication" finished-at="2024-09-11T11:08:59 IST" duration-ms="5607" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="LoginErrorValidation()[pri:0, instance:testCases.ErrorValidationTest@5adb0db3]" started-at="2024-09-11T11:08:59 IST" name="LoginErrorValidation" finished-at="2024-09-11T11:09:02 IST" duration-ms="2812" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[did not expect [Incorrect email or password.] but found [Incorrect email or password.]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: did not expect [Incorrect email or password.] but found [Incorrect email or password.]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failEquals(Assert.java:1582)
-at org.testng.Assert.assertNotEqualsImpl(Assert.java:157)
-at org.testng.Assert.assertNotEquals(Assert.java:2201)
-at org.testng.Assert.assertNotEquals(Assert.java:2223)
-at testCases.ErrorValidationTest.LoginErrorValidation(ErrorValidationTest.java:20)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LoginErrorValidation -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.ErrorValidationTest@5adb0db3]" started-at="2024-09-11T11:09:03 IST" name="tearDown" finished-at="2024-09-11T11:09:03 IST" duration-ms="349" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:testCases.ErrorValidationTest@5adb0db3]" started-at="2024-09-11T11:09:03 IST" name="launchApplication" finished-at="2024-09-11T11:09:08 IST" duration-ms="4998" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="ProductErrorValidation()[pri:0, instance:testCases.ErrorValidationTest@5adb0db3]" started-at="2024-09-11T11:09:08 IST" name="ProductErrorValidation" finished-at="2024-09-11T11:09:25 IST" duration-ms="17116" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ProductErrorValidation -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.ErrorValidationTest@5adb0db3]" started-at="2024-09-11T11:09:25 IST" name="tearDown" finished-at="2024-09-11T11:09:25 IST" duration-ms="274" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- testCases.ErrorValidationTest -->
+    <test started-at="2024-09-15T15:32:58 IST" name="Test" finished-at="2024-09-15T15:33:22 IST" duration-ms="24105">
       <class name="testCases.SubmitOrderTest">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:testCases.SubmitOrderTest@4df5bcb4]" started-at="2024-09-11T11:09:25 IST" name="launchApplication" finished-at="2024-09-11T11:09:31 IST" duration-ms="5245" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:testCases.SubmitOrderTest@22295ec4]" started-at="2024-09-15T15:32:58 IST" name="launchApplication" finished-at="2024-09-15T15:33:03 IST" duration-ms="5324" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="submitOrder()[pri:0, instance:testCases.SubmitOrderTest@4df5bcb4]" started-at="2024-09-11T11:09:31 IST" name="submitOrder" finished-at="2024-09-11T11:09:50 IST" duration-ms="19622" status="FAIL">
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+        <test-method signature="submitOrder()[pri:0, instance:testCases.SubmitOrderTest@22295ec4]" started-at="2024-09-15T15:33:03 IST" name="submitOrder" finished-at="2024-09-15T15:33:21 IST" duration-ms="17756" status="FAIL">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[element click intercepted: Element is not clickable at point (1049, 578)
-  (Session info: chrome=128.0.6613.120)
-Build info: version: '4.24.0', revision: '748ffc9bc3'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [7d4f0d4d52fd16cd10de0db3ce0645d9, clickElement {id=f.DC2D8F6A8848D7DAB4C29B1766E36368.d.490969343383F1D87E6FCE65F5A2F56D.e.118}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.120, chrome: {chromedriverVersion: 127.0.6533.72 (9755e24ca85a..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63068}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63068/devtoo..., se:cdpVersion: 128.0.6613.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (7d4f0d4d52fd16cd10de0db3ce0645d9)] -> xpath: //a[normalize-space()='Place Order']]
-Session ID: 7d4f0d4d52fd16cd10de0db3ce0645d9]]>
+              <![CDATA[expected [true] but found [false]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (1049, 578)
-  (Session info: chrome=128.0.6613.120)
-Build info: version: '4.24.0', revision: '748ffc9bc3'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [7d4f0d4d52fd16cd10de0db3ce0645d9, clickElement {id=f.DC2D8F6A8848D7DAB4C29B1766E36368.d.490969343383F1D87E6FCE65F5A2F56D.e.118}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.120, chrome: {chromedriverVersion: 127.0.6533.72 (9755e24ca85a..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63068}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63068/devtoo..., se:cdpVersion: 128.0.6613.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (7d4f0d4d52fd16cd10de0db3ce0645d9)] -> xpath: //a[normalize-space()='Place Order']]
-Session ID: 7d4f0d4d52fd16cd10de0db3ce0645d9
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
-at pageObjects.CheckoutPage.submitOrder(CheckoutPage.java:29)
-at testCases.SubmitOrderTest.submitOrder(SubmitOrderTest.java:31)
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at org.testng.Assert.assertTrue(Assert.java:67)
+at testCases.SubmitOrderTest.submitOrder(SubmitOrderTest.java:30)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -204,23 +51,23 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- submitOrder -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.SubmitOrderTest@4df5bcb4]" started-at="2024-09-11T11:09:51 IST" name="tearDown" finished-at="2024-09-11T11:09:51 IST" duration-ms="253" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.SubmitOrderTest@22295ec4]" started-at="2024-09-15T15:33:21 IST" name="tearDown" finished-at="2024-09-15T15:33:22 IST" duration-ms="353" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method signature="OrderHistory()[pri:0, instance:testCases.SubmitOrderTest@4df5bcb4]" started-at="2024-09-11T11:09:51 IST" name="OrderHistory" finished-at="2024-09-11T11:09:51 IST" depends-on-methods="testCases.SubmitOrderTest.submitOrder" duration-ms="1" status="SKIP">
+        <test-method signature="OrderHistory()[pri:0, instance:testCases.SubmitOrderTest@22295ec4]" started-at="2024-09-15T15:33:22 IST" name="OrderHistory" finished-at="2024-09-15T15:33:22 IST" depends-on-methods="testCases.SubmitOrderTest.submitOrder" duration-ms="0" status="SKIP">
           <exception class="java.lang.Throwable">
             <message>
-              <![CDATA[Method testCases.SubmitOrderTest.OrderHistory() on instance testCases.SubmitOrderTest@4df5bcb4 depends on not successfully finished methods 
-[testCases.SubmitOrderTest.submitOrder() on instance testCases.SubmitOrderTest@4df5bcb4]]]>
+              <![CDATA[Method testCases.SubmitOrderTest.OrderHistory() on instance testCases.SubmitOrderTest@22295ec4 depends on not successfully finished methods 
+[testCases.SubmitOrderTest.submitOrder() on instance testCases.SubmitOrderTest@22295ec4]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method testCases.SubmitOrderTest.OrderHistory() on instance testCases.SubmitOrderTest@4df5bcb4 depends on not successfully finished methods 
-[testCases.SubmitOrderTest.submitOrder() on instance testCases.SubmitOrderTest@4df5bcb4]
+              <![CDATA[java.lang.Throwable: Method testCases.SubmitOrderTest.OrderHistory() on instance testCases.SubmitOrderTest@22295ec4 depends on not successfully finished methods 
+[testCases.SubmitOrderTest.submitOrder() on instance testCases.SubmitOrderTest@22295ec4]
 at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
 at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
 at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)

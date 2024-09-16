@@ -6,13 +6,6 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="testCases.ErrorValidationTest">
-        <methods>
-          <include name="LoginErrorValidation"/>
-          <include name="tearDown"/>
-          <include name="launchApplication"/>
-        </methods>
-      </class> <!-- testCases.ErrorValidationTest -->
       <class name="testCases.SubmitOrderTest">
         <methods>
           <include name="submitOrder"/>

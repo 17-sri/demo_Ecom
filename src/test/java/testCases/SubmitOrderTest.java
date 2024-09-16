@@ -1,9 +1,7 @@
 package testCases;
 
 import java.io.IOException;
-import java.util.List;
 
-import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -20,8 +18,7 @@ public class SubmitOrderTest extends BaseClass {
 	public void submitOrder() throws IOException {
 		
 		ProductCatalogue productCatalogue = landingPage.loginAplication("srikanthv1709@gmail.com", "Selenium@123");
-		@SuppressWarnings("unused")// this is just a warning
-		List<WebElement> products = productCatalogue.getProductList();
+		productCatalogue.getProductList();
 		productCatalogue.addProductToCart(productName);
 		CartPage cartPage = productCatalogue.goToCartPage();
 		Boolean match = cartPage.verifyProductDisplay(productName);
