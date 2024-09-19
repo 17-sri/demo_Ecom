@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/1/1</td>
+<td>Tests passed/Failed/Skipped:</td><td>2/2/1</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Sep 15 15:32:58 IST 2024</td>
+<td>Started on:</td><td>Thu Sep 19 09:35:40 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>24 seconds (24105 ms)</td>
+<tr><td>Total time:</td><td>54 seconds (54151 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,17 +76,15 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testCases.SubmitOrderTest.submitOrder()'><b>submitOrder</b><br>Test class: testCases.SubmitOrderTest</td>
-<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
-	at testCases.SubmitOrderTest.submitOrder(SubmitOrderTest.java:30)
+<td title='testCases.ErrorValidationTest.ProductErrorValidation()'><b>ProductErrorValidation</b><br>Test class: testCases.ErrorValidationTest</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebElement.findElement(org.openqa.selenium.By)&quot; because &quot;prod&quot; is null
+	at pageObjects.ProductCatalogue.addProductToCart(ProductCatalogue.java:39)
+	at testCases.ErrorValidationTest.ProductErrorValidation(ErrorValidationTest.java:25)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace173197870", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace173197870'><pre>java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertTrue(Assert.java:57)
-	at org.testng.Assert.assertTrue(Assert.java:67)
-	at testCases.SubmitOrderTest.submitOrder(SubmitOrderTest.java:30)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace342740966", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace342740966'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebElement.findElement(org.openqa.selenium.By)&quot; because &quot;prod&quot; is null
+	at pageObjects.ProductCatalogue.addProductToCart(ProductCatalogue.java:39)
+	at testCases.ErrorValidationTest.ProductErrorValidation(ErrorValidationTest.java:25)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -114,26 +112,29 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
-<td>17</td>
-<td>testCases.SubmitOrderTest@22295ec4</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-skipped'>
-<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td><b>Attribute(s)</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
+<td>2</td>
+<td>testCases.ErrorValidationTest@12c7a01b</td></tr>
 <tr>
-<td title='testCases.SubmitOrderTest.OrderHistory()'><b>OrderHistory</b><br>Test class: testCases.SubmitOrderTest</td>
-<td><div><pre>java.lang.Throwable: Method testCases.SubmitOrderTest.OrderHistory() on instance testCases.SubmitOrderTest@22295ec4 depends on not successfully finished methods 
-[testCases.SubmitOrderTest.submitOrder() on instance testCases.SubmitOrderTest@22295ec4]
+<td title='testCases.ErrorValidationTest.LoginErrorValidation()'><b>LoginErrorValidation</b><br>Test class: testCases.ErrorValidationTest</td>
+<td><div><pre>java.lang.AssertionError: did not expect [Incorrect email or password.] but found [Incorrect email or password.]
+	at testCases.ErrorValidationTest.LoginErrorValidation(ErrorValidationTest.java:18)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1818592781", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1818592781'><pre>java.lang.Throwable: Method testCases.SubmitOrderTest.OrderHistory() on instance testCases.SubmitOrderTest@22295ec4 depends on not successfully finished methods 
-[testCases.SubmitOrderTest.submitOrder() on instance testCases.SubmitOrderTest@22295ec4]
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1713453581", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1713453581'><pre>java.lang.AssertionError: did not expect [Incorrect email or password.] but found [Incorrect email or password.]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failEquals(Assert.java:1582)
+	at org.testng.Assert.assertNotEqualsImpl(Assert.java:157)
+	at org.testng.Assert.assertNotEquals(Assert.java:2201)
+	at org.testng.Assert.assertNotEquals(Assert.java:2223)
+	at testCases.ErrorValidationTest.LoginErrorValidation(ErrorValidationTest.java:18)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
 	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
 	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
@@ -153,8 +154,78 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
-<td>0</td>
-<td>testCases.SubmitOrderTest@22295ec4</td></tr>
+<td>2</td>
+<td>testCases.ErrorValidationTest@12c7a01b</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testCases.SubmitOrderTest.OrderHistory()'><b>OrderHistory</b><br>Test class: testCases.SubmitOrderTest</td>
+<td></td>
+<td>3</td>
+<td>testCases.SubmitOrderTest@7241a47d</td></tr>
+<tr>
+<td title='testCases.SubmitOrderTest.submitOrder()'><b>submitOrder</b><br>Test class: testCases.SubmitOrderTest</td>
+<td></td>
+<td>18</td>
+<td>testCases.SubmitOrderTest@7241a47d</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testCases.ErrorValidationTest.LoginErrorValidation()'><b>LoginErrorValidation</b><br>Test class: testCases.ErrorValidationTest</td>
+<td><div><pre>java.lang.AssertionError: did not expect [Incorrect email or password.] but found [Incorrect email or password.]
+	at testCases.ErrorValidationTest.LoginErrorValidation(ErrorValidationTest.java:18)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace542895457", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace542895457'><pre>java.lang.AssertionError: did not expect [Incorrect email or password.] but found [Incorrect email or password.]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failEquals(Assert.java:1582)
+	at org.testng.Assert.assertNotEqualsImpl(Assert.java:157)
+	at org.testng.Assert.assertNotEquals(Assert.java:2201)
+	at org.testng.Assert.assertNotEquals(Assert.java:2223)
+	at testCases.ErrorValidationTest.LoginErrorValidation(ErrorValidationTest.java:18)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>2</td>
+<td>testCases.ErrorValidationTest@12c7a01b</td></tr>
 </table><p>
 </body>
 </html>

@@ -21,10 +21,11 @@ import pageObjects.LandingPage;
 public class BaseClass {
 	public WebDriver driver;
 	public LandingPage landingPage;
+	static Properties properties = new Properties();
 
 	public WebDriver initializeDriver() throws IOException {
 
-		Properties properties = new Properties();
+		
 		FileInputStream fileInputStream = new FileInputStream(
 				System.getProperty("user.dir") + "\\src\\test\\java\\utilities\\GlobalData.properties");
 		properties.load(fileInputStream);
@@ -36,10 +37,16 @@ public class BaseClass {
 		} else if (browserName.equalsIgnoreCase("edge")) {
 			// edge browser code is here
 		}
+		driver.manage().deleteAllCookies();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		return driver;
 	}
+	
+	// Method to get productName from the properties file
+    public String getProductNameFromProperties() {
+        return properties.getProperty("productName");
+    }
 
 	public String getScreenshot(String testCaseName, WebDriver driver) throws IOException {
 		String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());

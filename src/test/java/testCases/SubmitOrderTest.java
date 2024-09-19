@@ -13,10 +13,10 @@ import pageObjects.ProductCatalogue;
 import testComponents.BaseClass;
 
 public class SubmitOrderTest extends BaseClass {
-	String productName = "ZARA COAT 3";
+	
 	@Test
 	public void submitOrder() throws IOException {
-		
+		String productName = getProductNameFromProperties();
 		ProductCatalogue productCatalogue = landingPage.loginAplication("srikanthv1709@gmail.com", "Selenium@123");
 		productCatalogue.getProductList();
 		productCatalogue.addProductToCart(productName);
@@ -29,8 +29,10 @@ public class SubmitOrderTest extends BaseClass {
 		String confirmMessage = confirmationPage.getConfirmationMesage();
 		Assert.assertTrue(confirmMessage.equalsIgnoreCase("Thankyou for the order."));
 	}
+	
 	@Test(dependsOnMethods = {"submitOrder"})
 	public void OrderHistory() {
+		String productName = getProductNameFromProperties();
 		ProductCatalogue productCatalogue = landingPage.loginAplication("srikanthv1709@gmail.com", "Selenium@123");
 		OrdersPage ordersPage = productCatalogue.goToOrdersPage();
 		Assert.assertTrue(ordersPage.VerifyOrderDisplay(productName));
